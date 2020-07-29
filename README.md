@@ -8,4 +8,4 @@ Add \*|FNAME|* to the exact location of the .html file where you want each perso
 
 Launch the program with python3 mainfunc.py from the terminal.
 
-Wait for him to finish sending the emails while enjoying a great coffee
+Wait for it to finish sending the emails while enjoying a great coffee
