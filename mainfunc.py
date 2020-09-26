@@ -85,7 +85,7 @@ with open('Csv_file_name.csv', 'r') as csvfile:
             # This creates the file to be forwarded called azzamov contains the name of the person who replaces the writing *|FNAME|*
             # that you have inserted in the html files where you want the person's name to be put, and replaces the date
             # indicated by you in the point with *|DATE|* with the date you entered
-            rep_data(name, "25-05-2020", "Comunicazioni urgenti.html")
+            rep_data(name, "25-05-2020", "file_html_you_want_to_send.html")
 
             # Chouse the mail object you want
             send_email(mail_index, "html_file.html", "Mail object")
