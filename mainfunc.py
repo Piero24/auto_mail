@@ -80,7 +80,7 @@ with open('Csv_file_name.csv', 'r') as csvfile:
         name = str(index[0])
         surname = str(index[1])
         mail_index = str(index[2])
-
+        
         try:
             # This creates the file to be forwarded called azzamov contains the name of the person who replaces the writing *|FNAME|*
             # that you have inserted in the html files where you want the person's name to be put, and replaces the date
@@ -91,17 +91,12 @@ with open('Csv_file_name.csv', 'r') as csvfile:
             send_email(mail_index, "html_file.html", "Mail object")
             mail_counter += 1
             tot_mail += 1
-            print("Mail send to: " + str(surname) + " " + str(name) + " mail N: " + str(tot_mail))
+            print(f"Mail send to: {str(surname)} {str(name)} MAIL N: {str(tot_mail)}")
         except:
             mail_not_send += 1
             tot_mail += 1
-            print()
-            print()
-            print()
-            print("MAIL NOT SEND TO: " + str(surname) + " " + str(name) + " MAIL N: " + str(tot_mail))
-            print()
-            print()
-            print()
+            print(f"\n\n\nMAIL NOT SENT TO: {str(surname)} {str(name)} MAIL N: {str(tot_mail)}\n\n\n")
+
 
 print()
 print("I have send " + str(mail_counter) + " mail")
